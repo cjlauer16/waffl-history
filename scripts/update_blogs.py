@@ -37,6 +37,9 @@ def load_blogs():
         if not meta.get('title'):
             print(f"  Skipping {path.name}: no 'title' in frontmatter", file=sys.stderr)
             continue
+        if meta.get('draft', '').lower() == 'true':
+            print(f"  Skipping {path.name}: draft=true", file=sys.stderr)
+            continue
         posts.append({
             'slug': path.stem,
             'title': meta.get('title', path.stem),
