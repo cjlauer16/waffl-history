@@ -162,28 +162,54 @@ const DATA = {"league_name": "WAFFL", "generated_at": "2026-06-14 18:29", "seaso
 
 ## How to post
 
-Anyone in the league can write a post. You don't need to install anything. Here's the two-minute version:
+Anyone in the league can write a post. You don't need to install anything.
 
 1. Go to [github.com/cjlauer16/waffl-history](https://github.com/cjlauer16/waffl-history)
-2. Click into the `blog/` folder
+2. Click into the **blog/** folder
 3. Click **Add file → Create new file**
 4. Name your file: `YYYY-MM-DD-your-title.md` (e.g. `2026-08-01-my-take.md`)
 5. Paste this at the top and fill it in:
 
 ```
 ---
-title: Your Post Title
+title: Your Post Title Here
 author: YourLeagueName
 date: 2026-08-01
 ---
 ```
 
-6. Write whatever you want below that in plain text (markdown formatting works)
+6. Write your post below that line
 7. Click **Commit changes** — your post goes live in about a minute
 
-## Rules
+## Saving a draft
 
-There are no rules. This is fantasy football."}];/*__BLOGS_END__*/
+Add `draft: true` to the header block to save your post without publishing it:
+
+```
+---
+title: My Work In Progress
+author: YourLeagueName
+date: 2026-08-01
+draft: true
+---
+```
+
+It'll be saved in GitHub but won't appear on the site. When you're ready, edit the file and change `draft: true` to `draft: false` (or just delete that line).
+
+## Formatting
+
+Plain text is totally fine — just write like you're sending a text message and it'll look great.
+
+If you want **bold**, *italics*, or headers, use these shortcuts:
+
+| What you type | What it looks like |
+|---|---|
+| `**bold text**` | **bold text** |
+| `*italic text*` | *italic text* |
+| `# Big Heading` | a large header |
+| `## Smaller Heading` | a medium header |
+
+If you want a word processor with actual buttons, write your post at [dillinger.io](https://dillinger.io) (free, no account needed), then copy-paste the result into GitHub."}];/*__BLOGS_END__*/
 
 // ── Utilities ────────────────────────────────────────────────────────────────
 
