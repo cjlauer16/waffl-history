@@ -185,11 +185,9 @@ If you want a new paragraph, leave a blank line between your text. A single line
 
 If the formatting syntax looks annoying, you can write your post in a visual editor that works like Word or Google Docs — with actual buttons for bold, italic, headings, etc. — then copy and paste the result into GitHub.
 
-**[Dillinger.io](https://dillinger.io)** — Free, no account needed. Open it in a browser tab, write your post on the left side, see a preview on the right, then copy everything from the left side and paste it into GitHub's file editor.
+**[StackEdit.io](https://stackedit.io)** — Free, no account needed. Open it in a browser tab, write your post on the left side, see a preview on the right, then copy everything from the left side and paste it into GitHub's file editor.
 
-**[StackEdit.io](https://stackedit.io)** — Similar to Dillinger, also free. Has a slightly more polished interface with a full toolbar.
-
-Either one works. Write there, paste here.
+Write there, paste here.
 
 ---
 
