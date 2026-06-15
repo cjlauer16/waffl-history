@@ -1,84 +1,196 @@
 ---
-title: How to Write a WAFFL Blog Post (A Guide for Normal People)
+title: How to Write a WAFFL Blog Post
 author: cjlauer16
 date: 2026-06-15
 ---
 
-You're reading this, which means the blog works. Here's how you can post one yourself — no coding, no downloads, no asking Casey for help.
+Anyone in the league can write a blog post here. No coding knowledge required. This guide walks you through everything from creating an account to publishing your first post.
 
-## What you'll need
+---
 
-- A GitHub account (free at [github.com](https://github.com))
-- To be added as a collaborator on the repo (text Casey)
-- Something to say
+## Step 1: Create a GitHub Account
 
-That's it.
+Go to [github.com](https://github.com) and click **Sign up**. All you need is an email address. GitHub is free.
 
-## Step 1: Get to the blog folder
+Once you have an account, send your GitHub username to Casey so he can add you as a collaborator on the repo.
 
-Go to [github.com/cjlauer16/waffl-history](https://github.com/cjlauer16/waffl-history) and click on the **blog** folder.
+---
 
-You'll see the existing posts listed as files. Yours will live here too.
+## Step 2: Accept the Collaborator Invite
 
-## Step 2: Create a new file
+After Casey adds you, GitHub will send you an email with a link to accept the invitation. Click it. If you can't find the email, log into GitHub and check [github.com/notifications](https://github.com/notifications).
 
-Click **Add file → Create new file** in the top right.
+Once accepted, you have write access and can post.
 
-Name your file like this: `2026-08-01-my-post-title.md`
+---
 
-The date at the front (YYYY-MM-DD) is how posts get sorted newest-first. The rest of the name is up to you — just no spaces, use dashes instead. The `.md` at the end is required.
+## Step 3: Go to the Blog Folder
 
-## Step 3: Paste in the header
+Navigate to [github.com/cjlauer16/waffl-history](https://github.com/cjlauer16/waffl-history) and click on the **blog** folder. You'll see existing posts listed as files.
 
-Every post needs a small block at the very top that looks like this:
+---
+
+## Step 4: Create a New File
+
+Click **Add file → Create new file** in the top right corner of the page.
+
+Name your file using this format:
+
+```
+YYYY-MM-DD-your-post-title.md
+```
+
+For example: `2026-09-01-i-got-lucky-and-ill-admit-it.md`
+
+Rules for the filename:
+- Start with today's date (this controls sort order — newest shows first)
+- Use dashes instead of spaces
+- End with `.md`
+
+---
+
+## Step 5: Add the Header Block
+
+Every post needs a small block at the very top. Copy and paste this, then fill it in:
 
 ```
 ---
-title: I Robbed Winnie24 Blind and I'd Do It Again
+title: Your Post Title Here
 author: YourLeagueName
-date: 2026-08-01
+date: 2026-09-01
 ---
 ```
 
-Fill in your title, your league username, and today's date. Don't change anything else about the format — the dashes and colons matter.
+- **title** — what shows up as the post heading and in the blog list
+- **author** — your league username or whatever name you want displayed
+- **date** — the date of the post (YYYY-MM-DD format)
 
-## Step 4: Write your post
+Don't change the dashes or colons. Everything in between the `---` lines is the header, and everything after the second `---` is your post body.
 
-Below the header block (below the second `---`), just start typing. Write like you're texting someone. Full sentences, stream of consciousness, whatever — it'll look good.
+---
 
-**Want to add some formatting?** Here are the only three things worth knowing:
+## Step 6: Write Your Post
 
-- Surround a word with `**double stars**` to make it **bold**
-- Put a `#` before a line to make it a big heading
-- Put a `-` before each line to make a bulleted list
+Below the header block, just start writing. You don't need to know anything special — plain text works perfectly and will look good on the site.
 
-If that sounds annoying, go to [dillinger.io](https://dillinger.io) instead — it's a free editor with actual buttons like Word. Write there, copy the result, paste it into GitHub.
+---
 
-## Step 5: Publish it
+## Step 7: Publish It
 
-Scroll down to the bottom of the page. You'll see a **Commit changes** button. Click it, leave the default message, and click **Commit changes** again in the popup.
+Scroll to the bottom of the page and click **Commit changes**. Leave the default message as-is and click **Commit changes** again in the popup that appears.
 
 Your post will be live on the site in about 60 seconds.
 
-## Want to save a draft first?
+---
 
-Add `draft: true` to your header block:
+## Saving a Draft
+
+If you're not ready to publish yet, add `draft: true` to your header block:
 
 ```
 ---
-title: Still Working On This One
+title: Hot Take I'm Still Workshopping
 author: YourLeagueName
-date: 2026-08-01
+date: 2026-09-01
 draft: true
 ---
 ```
 
-It saves to GitHub (so you can come back and edit it) but won't show up on the site. When you're ready, edit the file, delete the `draft: true` line, and commit again.
-
-## Going back to edit a post
-
-Click on your file in the **blog** folder, then click the pencil icon (Edit) in the top right. Make your changes and commit. The site updates automatically.
+The post will be saved to GitHub and you can come back to edit it later — but it won't appear on the site. When you're ready, edit the file, remove (or change) the `draft: true` line, and commit again.
 
 ---
 
-That's the whole thing. If something breaks, text Casey.
+## Editing an Existing Post
+
+Click on your file in the **blog** folder, then click the **pencil icon** (Edit this file) in the top right. Make your changes and click **Commit changes**. The site updates in about 60 seconds.
+
+---
+
+## Formatting Your Post
+
+Plain text is totally fine and will look good. But if you want to add formatting, here's the complete reference:
+
+### Text Styling
+
+| What you type | What it looks like |
+|---|---|
+| `**bold text**` | **bold text** |
+| `*italic text*` | *italic text* |
+| `~~strikethrough~~` | ~~strikethrough~~ |
+| `**_bold and italic_**` | ***bold and italic*** |
+
+### Headings
+
+Put one or more `#` signs before a line to make it a heading. More `#` signs = smaller heading.
+
+```
+# Big Heading
+## Medium Heading
+### Smaller Heading
+```
+
+### Lists
+
+**Bullet list** — put a `-` or `*` before each item:
+```
+- First item
+- Second item
+- Third item
+```
+
+**Numbered list** — put `1.`, `2.`, etc. before each item:
+```
+1. First item
+2. Second item
+3. Third item
+```
+
+### Quotes
+
+Put a `>` before a line to make it a blockquote:
+```
+> This is a quote or callout.
+```
+
+### Horizontal Rule (divider line)
+
+Three dashes on their own line:
+```
+---
+```
+
+### Links
+
+```
+[link text](https://example.com)
+```
+
+### Code / Monospace Text
+
+Surround inline text with backticks: `` `like this` ``
+
+For a multi-line code block, use three backticks before and after:
+
+```
+your code or text here
+```
+
+### Line Breaks
+
+If you want a new paragraph, leave a blank line between your text. A single line break in the editor won't create a new paragraph — you need the blank line.
+
+---
+
+## Don't Want to Learn All That? Use a Visual Editor
+
+If the formatting syntax looks annoying, you can write your post in a visual editor that works like Word or Google Docs — with actual buttons for bold, italic, headings, etc. — then copy and paste the result into GitHub.
+
+**[Dillinger.io](https://dillinger.io)** — Free, no account needed. Open it in a browser tab, write your post on the left side, see a preview on the right, then copy everything from the left side and paste it into GitHub's file editor.
+
+**[StackEdit.io](https://stackedit.io)** — Similar to Dillinger, also free. Has a slightly more polished interface with a full toolbar.
+
+Either one works. Write there, paste here.
+
+---
+
+That's everything. If something breaks or you can't figure out a step, text Casey.
