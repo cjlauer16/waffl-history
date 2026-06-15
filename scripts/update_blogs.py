@@ -53,16 +53,16 @@ def load_blogs():
 def patch_html(posts):
     html = INDEX.read_text(encoding='utf-8')
     blogs_json = json.dumps(posts, ensure_ascii=False)
-    new_block = f'/*__BLOGS_START__*/const BLOGS = {blogs_json};/*__BLOGS_END__*/'
+    replacement = f'/*__BLOGS_START__*/const BLOGS = {blogs_json};/*__BLOGS_END__*/'
     patched, n = re.subn(
         r'/\*__BLOGS_START__\*/.*?/\*__BLOGS_END__\*/',
-        new_block,
+        lambda m: replacement,
         html,
         flags=re.DOTALL,
     )
     if n == 0:
-        print("ERROR: BLOGS marker not found in index.html — was it generated with the blog feature?", file=sys.stderr)
-        sys.exit(1)
+        print("WARNING: BLOGS marker not found in index.html — skipping patch. Run publish.sh to regenerate.", file=sys.stderr)
+        return
     INDEX.write_text(patched, encoding='utf-8')
     print(f"  Patched index.html with {len(posts)} blog post(s)")
 
