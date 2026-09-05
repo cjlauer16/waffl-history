@@ -663,7 +663,32 @@ function showBlogPost(slug){
       <h1 class="blog-post-title">${esc(b.title)}</h1>
       <div class="blog-post-meta">by <strong>${esc(b.author)}</strong>${b.date?' · '+esc(b.date):''}</div>
       <div class="ai-text">${mdToHtml(b.body||'')}</div>
+      <div id="giscus-comments" style="margin-top:2rem"></div>
     </div>`;
+  loadGiscus(slug);
+}
+
+function loadGiscus(term){
+  const container=document.getElementById('giscus-comments');
+  if(!container) return;
+  container.innerHTML='';
+  const script=document.createElement('script');
+  script.src='https://giscus.app/client.js';
+  script.setAttribute('data-repo','cjlauer16/waffl-history');
+  script.setAttribute('data-repo-id','R_kgDOS6sl6w');
+  script.setAttribute('data-category','Announcements');
+  script.setAttribute('data-category-id','DIC_kwDOS6sl684DE8WN');
+  script.setAttribute('data-mapping','specific');
+  script.setAttribute('data-term',term);
+  script.setAttribute('data-strict','0');
+  script.setAttribute('data-reactions-enabled','1');
+  script.setAttribute('data-emit-metadata','0');
+  script.setAttribute('data-input-position','top');
+  script.setAttribute('data-theme','preferred_color_scheme');
+  script.setAttribute('data-lang','en');
+  script.setAttribute('crossorigin','anonymous');
+  script.async=true;
+  container.appendChild(script);
 }
 
 // ── App ───────────────────────────────────────────────────────────────────────
