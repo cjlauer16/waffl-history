@@ -1,6 +1,6 @@
 ---
 title: 2026 Season Preview: Old Grudges, New Rosters, Same Curses
-author: cjlauer16
+author: Claude
 date: 2026-09-05
 ---
 
