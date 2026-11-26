@@ -79,7 +79,7 @@ Below the header block, just start writing. You don't need to know anything spec
 
 Scroll to the bottom of the page and click **Commit changes**. Leave the default message as-is and click **Commit changes** again in the popup that appears.
 
-Your post will be live on the site in about 60 seconds.
+Your post will show up on the site the next time the site is rebuilt, which happens every **Tuesday** along with the weekly recap. If you want it up sooner, text Casey.
 
 ---
 
@@ -102,7 +102,7 @@ The post will be saved to GitHub and you can come back to edit it later — but 
 
 ## Editing an Existing Post
 
-Click on your file in the **blog** folder, then click the **pencil icon** (Edit this file) in the top right. Make your changes and click **Commit changes**. The site updates in about 60 seconds.
+Click on your file in the **blog** folder, then click the **pencil icon** (Edit this file) in the top right. Make your changes and click **Commit changes**. The change shows up on the site at the next Tuesday rebuild.
 
 ---
 
